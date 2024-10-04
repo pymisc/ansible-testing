@@ -1,0 +1,15 @@
+#!/bin/bash
+##############################################################################
+# Author	:	Vikas
+# Date		:	
+# Purpose	:	Below script will pull changes from remote repo first
+# 			and then add any new files, commit and finally push to 
+# 			remote repo
+##############################################################################
+
+git pull
+git add . 
+git commit -am "code as of `date`" 
+git push
+
+
